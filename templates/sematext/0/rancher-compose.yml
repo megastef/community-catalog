@@ -4,6 +4,15 @@
   description: "Sematext Docker Agent"
   minimum_rancher_version: v0.46.0
   questions:
+    - variable: "region"
+      label: "Region"
+      description: "Set the region (Europe or USA)"
+      required: false
+      default: "US"
+      type: "enum"
+      options:
+        - "EU"
+        - "US"
     - variable: "logsene_token"
       label: "Logsene Token"
       description: "Your Logsene Application Token"

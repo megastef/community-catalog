@@ -12,6 +12,7 @@ sematext-agent:
     - SKIP_BY_NAME=${skip_by_name}
     - LOGAGENT_PATTERNS=${logagent_patterns}
     - KUBERNETES=${kubernetes}
+    - REGION=${region}
   restart: always
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
